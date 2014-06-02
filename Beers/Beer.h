@@ -11,7 +11,7 @@
 @interface Beer : NSObject{
     NSString *name;
     NSString *color;
-    NSUInteger alcohol;
+    NSUInteger grade;
 }
 - (void) printBeerInfo;
 - (void) printBeerInfoWithHeader:(NSString *)header;
