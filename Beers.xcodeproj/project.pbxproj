@@ -19,6 +19,7 @@
 		FE403D9D193CCFE100D3ABE0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE403D85193CCFE100D3ABE0 /* UIKit.framework */; };
 		FE403DA5193CCFE100D3ABE0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FE403DA3193CCFE100D3ABE0 /* InfoPlist.strings */; };
 		FE403DA7193CCFE100D3ABE0 /* BeersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE403DA6193CCFE100D3ABE0 /* BeersTests.m */; };
+		FE403DB2193CD21100D3ABE0 /* Beer.m in Sources */ = {isa = PBXBuildFile; fileRef = FE403DB1193CD21100D3ABE0 /* Beer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		FE403DA2193CCFE100D3ABE0 /* BeersTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BeersTests-Info.plist"; sourceTree = "<group>"; };
 		FE403DA4193CCFE100D3ABE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FE403DA6193CCFE100D3ABE0 /* BeersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeersTests.m; sourceTree = "<group>"; };
+		FE403DB0193CD21100D3ABE0 /* Beer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Beer.h; sourceTree = "<group>"; };
+		FE403DB1193CD21100D3ABE0 /* Beer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Beer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +114,8 @@
 				FE403D91193CCFE100D3ABE0 /* AppDelegate.m */,
 				FE403D93193CCFE100D3ABE0 /* Images.xcassets */,
 				FE403D88193CCFE100D3ABE0 /* Supporting Files */,
+				FE403DB0193CD21100D3ABE0 /* Beer.h */,
+				FE403DB1193CD21100D3ABE0 /* Beer.m */,
 			);
 			path = Beers;
 			sourceTree = "<group>";
@@ -239,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE403DB2193CD21100D3ABE0 /* Beer.m in Sources */,
 				FE403D92193CCFE100D3ABE0 /* AppDelegate.m in Sources */,
 				FE403D8E193CCFE100D3ABE0 /* main.m in Sources */,
 			);
