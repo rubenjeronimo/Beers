@@ -8,25 +8,66 @@
 
 #import "AppDelegate.h"
 #import "Beer.h"
+#import "Person.h"
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    /*self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-    Beer *mahou=[[Beer alloc]init];
+    */
+     Beer *mahou=[[Beer alloc]init];
     Beer *cruzcampo=[Beer new];
     Beer *estrellaDamm=[[Beer alloc]init];
+    Beer *coronita=[[Beer alloc]init];
+    
+    //[mahou printBeerInfoWithHeader:(@"---------")];
+    //[mahou printBeerInfoWithHeader:(@"---------") andFooter:(@"jdjdjdjdj")];
+    //[mahou printBeerInfoWithHeader:(@"jdjdjdjdj") andFooter:(@"jdjdjdjdj") andNumberOfEmojis:2];
+    
+    
+    [mahou setName:@"mahou"];
+    //[cruzcampo setName:@"cruzcampo"];
+    cruzcampo.name=@"cruzcampo";
+    [estrellaDamm setName:@"estrellaDamm"];
+    [coronita setName:@"coronita"];
+    [mahou setColor:@"amarillo"];
+    [cruzcampo setColor:@"verde"];
+    [estrellaDamm setColor:@"negro"];
+    [coronita setColor:@"amarillo"];
+    [mahou setGrade:5];
+    [cruzcampo setGrade:4];
+    [estrellaDamm setGrade:3];
+    [coronita setGrade:6];
     
     [mahou printBeerInfo];
-    [mahou printBeerInfoWithHeader:(@"jdjdjdjdj")];
-    [mahou printBeerInfoWithHeader:(@"jdjdjdjdj") andFooter:(@"jdjdjdjdj")];
-    [mahou printBeerInfoWithHeader:(@"jdjdjdjdj") andFooter:(@"jdjdjdjdj") andNumberOfEmojis:2];
+    [cruzcampo printBeerInfo];
+    
+    Person *uno= [[Person alloc]init];
+    
+    uno.name=@"jacinto";
+    uno.age=22;
+    uno.adress=@"calle cosa fina 22";
     
     
+    Person *Groucho=[[Person alloc]init];
+    Person *Harpo=[[Person alloc]initWithName:@"Groucho"];
+    Person *Chico=[[Person alloc]initWithName:@"Chico" andAdress:@"C/de los hermanos 1"];
+    Person *Zeppo=[[Person alloc]initWithName:@"Zeppo" andAdress:@"C/de los hermanos 2" age:30];
     
+    NSArray *personList=[NSArray arrayWithObjects:Groucho,Harpo,Chico,Zeppo, nil];
+    NSArray *personList2=@[Chico,Harpo];
+    Person *p=[[Person alloc]initWithName:@"pepe"];
+    NSMutableArray *partyList= [NSMutableArray arrayWithObjects:Groucho,Harpo, nil];
+    for (int i=0; i<=100; i++) {
+        Person *p =[Person personWithName:[NSString stringWithFormat:@"persona %d",i]];
+        [partyList addObject:p];
+    }
+    for (Person *nombre in partyList) {
+        NSLog(@"%@",nombre.name);
+    }
     return YES;
 }
 

@@ -8,8 +8,34 @@
 
 #import "Beer.h"
 
-@implementation Beer{
-    
+@implementation Beer
+@synthesize country=_country;
+
+
+-(NSString *)name{
+    return self->name;
+}
+-(void)setName:(NSString *)newName{
+    self->name=newName;
+}
+-(NSString *) color{
+    return self->color;
+}
+-(void)setColor:(NSString *)newColor{
+    self->color=newColor;
+}
+-(NSUInteger)grade{
+    return self->grade;
+}
+-(void)setGrade:(NSUInteger)newGrade{
+    self->grade=newGrade;
+}
+
+-(NSString *)country{
+    return self->_country;
+}
+-(void) setCountry:(NSString *)newCountry{
+    self->_country=newCountry;
 }
 - (void) printBeerInfo{
     NSLog(@"nombre: %@ alcohol %d color: %@",name,grade,color);
