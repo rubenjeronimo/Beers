@@ -31,6 +31,7 @@
 		FE403D9D193CCFE100D3ABE0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE403D85193CCFE100D3ABE0 /* UIKit.framework */; };
 		FE403DA5193CCFE100D3ABE0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FE403DA3193CCFE100D3ABE0 /* InfoPlist.strings */; };
 		FE403DB2193CD21100D3ABE0 /* Beer.m in Sources */ = {isa = PBXBuildFile; fileRef = FE403DB1193CD21100D3ABE0 /* Beer.m */; };
+		FE97D1741940519F003438A6 /* Hotel.m in Sources */ = {isa = PBXBuildFile; fileRef = FE97D1731940519F003438A6 /* Hotel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,9 @@
 		FE403DA4193CCFE100D3ABE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FE403DB0193CD21100D3ABE0 /* Beer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Beer.h; sourceTree = "<group>"; };
 		FE403DB1193CD21100D3ABE0 /* Beer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Beer.m; sourceTree = "<group>"; };
+		FE97D1721940519F003438A6 /* Hotel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hotel.h; sourceTree = "<group>"; };
+		FE97D1731940519F003438A6 /* Hotel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hotel.m; sourceTree = "<group>"; };
+		FE97D17519405C4F003438A6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,8 @@
 				FE051FFA193DC360003DFC6F /* Person.m */,
 				FE114268193F35F700F7EABA /* BeerList.h */,
 				FE114269193F35F700F7EABA /* BeerList.m */,
+				FE97D1721940519F003438A6 /* Hotel.h */,
+				FE97D1731940519F003438A6 /* Hotel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -154,6 +160,7 @@
 		FE403D75193CCFE100D3ABE0 = {
 			isa = PBXGroup;
 			children = (
+				FE97D17519405C4F003438A6 /* README.md */,
 				FE114262193F037C00F7EABA /* artwork */,
 				FE403D87193CCFE100D3ABE0 /* Beers */,
 				FE403DA0193CCFE100D3ABE0 /* BeersTests */,
@@ -333,6 +340,7 @@
 				FE05200C193E25DA003DFC6F /* AlphaViewController.m in Sources */,
 				FE051FFF193DE8D1003DFC6F /* EuroConverter.m in Sources */,
 				FE11426A193F35F700F7EABA /* BeerList.m in Sources */,
+				FE97D1741940519F003438A6 /* Hotel.m in Sources */,
 				FE403D8E193CCFE100D3ABE0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
